@@ -1,0 +1,60 @@
+body{
+    background-color: #ccc;
+}
+
+input[type=radio] {
+    display: none;
+  }
+label {
+    position: relative;
+    display: block;
+}
+label:after {
+    content: "+";
+    position: absolute;
+    right: 1em;
+}
+input:checked + label:after {
+    content: "-";
+}
+input:checked ~ .acc-content {
+    height: 150px;
+}
+
+.acc-header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.acc-ctrl{
+    position: absolute;
+    right: 20px;   
+}
+
+
+
+@media only screen and (min-width : 320px) {
+    .container{
+        width:90%;
+        margin: auto;
+        background-color: green;
+    }
+ 
+}
+
+@media only screen and (min-width : 820px) {
+    .container{
+        width:90%;
+        margin: auto;
+        background-color: red;
+    }
+   
+}
+
+@media only screen and (min-width : 1920px) {
+    .container{
+        width:90%;
+        margin: auto;
+        background-color: yellow;
+    }
+}
